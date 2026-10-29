@@ -61,3 +61,4 @@ HTML5 · CSS3 · JavaScript vanilla · GitHub Pages · GitHub Actions
 ## Licence
 
 Le contenu professionnel et les textes de ce portfolio sont personnels. Le dépôt n'accorde aucun droit de réutiliser du code, des visuels ou des documents tiers qui ne seraient pas détenus par l'auteur. Voir `LICENSE`.
+Portfolio professionnel de Mickael Di Bella.
