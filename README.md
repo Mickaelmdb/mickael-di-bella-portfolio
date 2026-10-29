@@ -9,6 +9,12 @@ Portfolio bilingue (français / anglais) présentant des réalisations anonymis�
 - Publier un site statique rapide, responsive et sans dépendances externes.
 - Conserver le code et les études de cas dans un repository Git versionné.
 
+## Sources visuelles et données réelles
+
+Le portfolio intègre des extraits de **captures réelles partagées en octobre 2026** (monitoring, PIAF, Apps Script, KPI). Aucune valeur inventée n’est ajoutée dans ces captures. La provenance et les précautions de diffusion figurent dans `SOURCE-EVIDENCE.md`.
+
+**Important : ce ZIP est une version à examiner avant publication publique**, car il comporte des métriques et visuels issus d’un environnement professionnel. Le dépôt n’a pas été mis à jour automatiquement.
+
 ## Contenu
 
 - `index.html` : page d'accueil bilingue.
@@ -61,4 +67,3 @@ HTML5 · CSS3 · JavaScript vanilla · GitHub Pages · GitHub Actions
 ## Licence
 
 Le contenu professionnel et les textes de ce portfolio sont personnels. Le dépôt n'accorde aucun droit de réutiliser du code, des visuels ou des documents tiers qui ne seraient pas détenus par l'auteur. Voir `LICENSE`.
-Portfolio professionnel de Mickael Di Bella.

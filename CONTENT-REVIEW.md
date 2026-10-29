@@ -25,3 +25,9 @@
 - [ ] Tester les versions française et anglaise.
 - [ ] Tester sur mobile et desktop.
 - [ ] Tester les quatre études de cas et les liens.
+
+## Captures ajoutées le 29/10/2026
+- [ ] Valider le droit de diffuser les captures HomeIndex, PIAF, Apps Script et indicateurs d’activité.
+- [ ] Vérifier l’absence de données identifiantes, contractuelles ou sensibles sur les images.
+- [ ] Vérifier les autorisations concernant la publication d’indicateurs internes (produits, backlog, KPI).
+- [ ] Confirmer que les webhooks et secrets visibles dans d’anciens fichiers internes ont été révoqués si nécessaire.
