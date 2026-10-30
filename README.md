@@ -1,31 +1,42 @@
 # Mickael Di Bella — IT Operations Portfolio
 
-Portfolio bilingue (français / anglais) présentant des réalisations anonymisées autour du Run Management, de l'Incident Management, de l'observabilité, de la qualité de données et de l'automatisation opérationnelle.
+**Portfolio professionnel bilingue (FR / EN)** — Run Management, Incident Management, support applicatif, qualité de données et automatisation.
 
-## Objectifs
+> Design V2 : direction éditoriale, typographie affirmée, captures issues du travail, navigation simplifiée et études de cas détaillées. Inspiré de l'approche narrative et visuelle du template Wix fourni, sans reprendre ses assets, son code ni sa mise en page à l'identique.
 
-- Présenter une expérience opérationnelle concrète à des recruteurs et clients potentiels.
-- Expliquer les réalisations selon une structure problème → actions → résultats.
-- Publier un site statique rapide, responsive et sans dépendances externes.
-- Conserver le code et les études de cas dans un repository Git versionné.
+## Aperçu
 
-## Sources visuelles et données réelles
+Le site présente :
 
-Le portfolio intègre des extraits de **captures réelles partagées en octobre 2026** (monitoring, PIAF, Apps Script, KPI). Aucune valeur inventée n’est ajoutée dans ces captures. La provenance et les précautions de diffusion figurent dans `SOURCE-EVIDENCE.md`.
+- Une page d'accueil immersive avec une promesse professionnelle claire.
+- Quatre études de cas en français et en anglais.
+- Des extraits de captures professionnelles déjà partagées par l'auteur.
+- Un filtrage des projets, une galerie agrandissable, une navigation mobile, un changement de langue et un contact direct.
+- Un site statique, sans framework ni collecte de données.
 
-**Important : ce ZIP est une version à examiner avant publication publique**, car il comporte des métriques et visuels issus d’un environnement professionnel. Le dépôt n’a pas été mis à jour automatiquement.
+## Structure
 
-## Contenu
+```text
+index.html
+assets/
+  css/site.css
+  js/site.js
+  evidence/*.png
+  favicon.svg
+projects/
+  homeindex-data-quality.html (+ -en.html)
+  automated-monitoring.html (+ -en.html)
+  piaf.html (+ -en.html)
+  run-tracker.html (+ -en.html)
+.nojekyll
+README.md
+CONTENT-REVIEW.md
+SOURCE-EVIDENCE.md
+```
 
-- `index.html` : page d'accueil bilingue.
-- `assets/css/styles.css` : styles du site.
-- `assets/js/main.js` : changement de langue, navigation mobile et année du footer.
-- `projects/` : quatre études de cas anonymisées.
-- `.github/workflows/pages.yml` : déploiement automatique sur GitHub Pages.
+## Voir en local
 
-## Prévisualiser en local
-
-Ouvrir `index.html` dans un navigateur. Pour tester le site avec un serveur local Python :
+Double-cliquer sur `index.html`, ou lancer un serveur local :
 
 ```bash
 python -m http.server 8000
@@ -33,37 +44,35 @@ python -m http.server 8000
 
 Puis ouvrir `http://localhost:8000`.
 
-## Publier sur GitHub Pages
+## Publication GitHub Pages
 
-1. Créer un repository GitHub, par exemple `mickael-di-bella-portfolio`.
-2. Ajouter les fichiers de ce dossier à la racine du repository.
-3. Dans **Settings → Pages**, choisir **GitHub Actions** comme source de déploiement.
-4. Pousser la branche `main`. Le workflow publie le site automatiquement.
-5. Vérifier l'onglet **Actions**, puis ouvrir l'URL GitHub Pages indiquée par GitHub.
-6. Remplacer les liens de profil génériques dans `index.html` par les bonnes URL.
-7. Si le dépôt est publié sous une URL de projet, les chemins relatifs des pages sont déjà adaptés.
+1. Examiner `CONTENT-REVIEW.md` et `SOURCE-EVIDENCE.md` **avant** toute publication publique.
+2. Déposer les fichiers à la **racine** de la branche `main` du repository.
+3. Aller dans **Settings → Pages**.
+4. Sélectionner **Deploy from a branch**, branche `main`, dossier `/(root)`.
+5. Enregistrer si nécessaire et attendre la fin de `pages build and deployment`.
+6. Ouvrir `https://mickaelmdb.github.io/mickael-di-bella-portfolio/`.
 
-Le workflow nécessite que GitHub Pages soit activé pour le repository. Aucun secret n'est requis pour ce site statique.
+**Important :** aucun workflow `.github/workflows/pages.yml` n'est nécessaire avec ce mode. L'ancien workflow pouvait échouer avec l'erreur `Missing environment` : ne pas le conserver en parallèle.
 
-## Personnalisation avant publication
+## Personnalisation
 
-- Vérifier le titre professionnel et le résumé d'introduction.
-- Ajouter une adresse e-mail professionnelle si souhaité, en tenant compte du spam.
-- Remplacer le lien GitHub générique par le profil ou le repository réel.
-- Ajouter une photo uniquement si elle améliore le positionnement recherché.
-- Vérifier les chiffres de l'expérience opérationnelle et documenter leur périmètre avant usage externe.
-- Ajouter éventuellement une version PDF du CV et des liens vers des démonstrations publiques.
+- Textes FR/EN : attributs `data-fr` / `data-en` dans `index.html`.
+- Couleurs et typographie : variables CSS au début de `assets/css/site.css`.
+- Études de cas : fichiers `projects/*.html`.
+- Captures : `assets/evidence/` (sous réserve des droits de publication).
+- Contact : `mailto:mickael-dibella@hotmail.fr`, LinkedIn et GitHub.
 
-## Confidentialité et propriété intellectuelle
+## Accessibilité et technique
 
-Ce dépôt est prévu pour être public. **Ne pas y ajouter** de tickets réels, captures d'écran internes, données clients, noms de systèmes propriétaires, URL privées, requêtes internes, schémas de bases, code appartenant à un employeur, secrets, tokens, webhooks, identifiants, cookies ou données personnelles.
+Responsive, navigation clavier, lien d'évitement, contraste, `prefers-reduced-motion`, balises sémantiques, images avec texte alternatif, filtres avec `aria-pressed`, lightbox native `<dialog>`.
 
-Les études de cas ont été reformulées de manière générique. Les chiffres d'activité visibles sont des indicateurs issus des notes de suivi fournies pour préparer le portfolio ; confirmer le périmètre et l'autorisation de publication avant de les présenter à l'extérieur. Les résultats non mesurés sont explicitement décrits comme objectifs ou bénéfices attendus.
+## Sécurité / droits
 
-## Technologies
+Ne pas publier de code propriétaire, données de clients, identifiants, clés API, tokens, webhooks ou captures internes sans autorisation. Les chiffres du portfolio proviennent de bilans rapportés par l'auteur et ne sont pas des statistiques publiquement auditées. Voir les deux documents de revue.
 
-HTML5 · CSS3 · JavaScript vanilla · GitHub Pages · GitHub Actions
+## Auteur
 
-## Licence
+**Mickael Di Bella** — [LinkedIn](https://www.linkedin.com/in/mickaeldibella/) · [GitHub](https://github.com/Mickaelmdb) · [Email](mailto:mickael-dibella@hotmail.fr)
 
-Le contenu professionnel et les textes de ce portfolio sont personnels. Le dépôt n'accorde aucun droit de réutiliser du code, des visuels ou des documents tiers qui ne seraient pas détenus par l'auteur. Voir `LICENSE`.
+Code du site fourni pour personnalisation et publication. Les captures et les marques tierces restent soumises aux droits de leurs titulaires.

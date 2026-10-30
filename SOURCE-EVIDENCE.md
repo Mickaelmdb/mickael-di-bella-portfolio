@@ -28,3 +28,6 @@ Ces éléments ont été rapportés ou montrés par l’auteur ; ils ne constitu
 
 ## Pourquoi certains détails de tickets ne sont pas intégrés
 Les captures intégrales comportent des noms de collègues et des identifiants de tickets ; ce sont des informations de tiers qui ne sont pas nécessaires pour démontrer les compétences. Le cadrage conserve les KPI et les fonctions de l’interface sans republier ces éléments.
+
+## Direction artistique V2
+Le template Wix fourni par l'auteur sert uniquement de référence d'expérience (grands titres, récit, mise en avant des réalisations, hiérarchie et contact clair). Aucune image ou ressource Wix n'est reproduite.
